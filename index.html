@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Mhrez, PhD - Interactive Portfolio</title>
+    <script src="js/3.4.js"></script>
+    <script src="js/chart.js"></script>
+	<script src="js/data.js"></script>
+    <link href="css/css2.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FDFBF8;
+            color: #403A3A;
+        }
+        .modal-backdrop {
+            transition: opacity 0.3s ease;
+        }
+        .modal-content {
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header id="header" class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-gray-800">Ali Mhrez, PhD</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#experience" class="text-gray-600 hover:text-indigo-600 transition-colors">Experience</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition-colors">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#education" class="text-gray-600 hover:text-indigo-600 transition-colors">Education</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#experience" class="block py-2 text-gray-600 hover:text-indigo-600">Experience</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:text-indigo-600">Skills</a>
+            <a href="#projects" class="block py-2 text-gray-600 hover:text-indigo-600">Projects</a>
+            <a href="#education" class="block py-2 text-gray-600 hover:text-indigo-600">Education</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-20 md:py-32 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">Ali Mhrez, PhD</h1>
+                <h2 class="text-2xl md:text-3xl text-indigo-600 mt-4">PhD Researcher in Data Science & NLP</h2>
+                <p class="mt-6 max-w-3xl mx-auto text-lg text-gray-600">
+                    Passionate researcher and developer specializing in Natural Language Processing (NLP) and deep learning. My work focuses on building robust models for tasks like stance detection, document summarization, and natural language inference. I am dedicated to exploring state-of-the-art techniques and contributing to the advancement of data science through research and practical application.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Professional Journey</h2>
+                <p class="text-center max-w-2xl mx-auto text-gray-600 mb-12">
+                    Follow my professional journey, from foundational roles to my current research in NLP. The timeline below provides a comprehensive overview of my responsibilities and achievements in each position.
+                </p>
+                <div class="relative wrap overflow-hidden p-10 h-full">
+                    <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border" style="left: 50%"></div>
+                    
+                    <div id="experience-timeline"></div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Technical Expertise</h2>
+                <p class="text-center max-w-2xl mx-auto text-gray-600 mb-12">
+                    This section provides an overview of my technical capabilities, detailing the specific languages, frameworks, and foundational concepts I work with.
+                </p>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-indigo-700">Languages & Frameworks</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>Python (PyTorch, Scikit-Learn, Pandas, Numpy, etc.)</li>
+                            <li>Java</li>
+                            <li>SQL</li>
+                            <li>Matlab</li>
+                            <li>Version Control (Git)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-indigo-700">Foundational Knowledge</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>Deep Learning Models</li>
+                            <li>Natural Language Processing (NLP)</li>
+                            <li>Object-Oriented Programming (OOP)</li>
+                            <li>Linear Algebra</li>
+                            <li>Probability & Statistics</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold mb-4 text-indigo-700">Continuing Education
+							<a href="https://drive.google.com/drive/folders/1YYXvxgCtbuq_GQMDZqGAMUKd36WIunPI/" target="_blank" rel="noopener noreferrer" class="ml-2 text-indigo-600 hover:text-indigo-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </a>
+						</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li>Nvidia: Transformer-Based NLP Apps</li>
+                            <li>Coursera: Deep Learning Specialization</li>
+                            <li>Coursera: Machine Learning Course</li>
+                            <li>Coursera: Intro to Data Science in Python</li>
+							<li>Coursera: Applied Plotting, Charting & Data Representation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Featured Projects</h2>
+                <p class="text-center max-w-2xl mx-auto text-gray-600 mb-12">
+                    Here are some of the key projects I've worked on. They demonstrate my ability to lead development lifecycles and conduct in-depth research. The details for each project are shown below.
+                </p>
+                <div id="projects-grid" class="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Nuanced Stance Detection Models</h3>
+                        <p class="text-gray-600">Using Multilingual BERT (mBERT) features as input to CNN and LSTM architectures. We explore two approaches to feature extraction: Using the last layer,and concatenating features from last four layers.</p>
+                        <p><a href="https://github.com/Ali-Mhrez/Stance-Detection-MBERT-Features" target="_blank" class="text-indigo-600">more details...</a></p>
+                    </div>
+					<div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Stance Detection Using Multilingual Language Models</h3>
+                        <p class="text-gray-600">Investigated the potential of multilingual language models, including mbert, xlm-roberta, distilmbert, and mdeberta for enhanced stance detection capabilities.</p>
+                        <p><a href="https://github.com/Ali-Mhrez/Stance-Detection-MLLM" target="_blank" class="text-indigo-600">more details...</a></p>
+                    </div>
+					<div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Stance Detection Using Arabic Language Models</h3>
+                        <p class="text-gray-600">Explored Arabic language models, including arbert, marbert, gigabert, and albert to address specific language challenges.</p>
+                        <p><a href="https://github.com/Ali-Mhrez/Stance-Detection-Arabic-LM" target="_blank" class="text-indigo-600">more details...</a></p>
+                    </div>
+					<div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Stance Detection Using Deep Learning Techniques</h3>
+                        <p class="text-gray-600">Implemented deep learning models, leveraging transfer learning, pre-trained embeddings, MLPs, CNNs, and LSTMs.</p>
+                        <p><a href="https://github.com/Ali-Mhrez/Stance-Detection-DL-Models" target="_blank" class="text-indigo-600">more details...</a></p>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Insurance Record Management System</h3>
+                        <p class="text-gray-600">Led the full development lifecycle of a critical system for the Central Bank of Syria, from requirement gathering to deployment.</p>
+                        <div class="mt-4 text-gray-600 space-y-2">
+                            <p>This project involved creating a comprehensive system to manage insurance records efficiently and securely. My responsibilities included:</p>
+                            <ul class="ml-4 list-disc space-y-1">
+                                <li>Gathering and analyzing user requirements from various departments.</li>
+                                <li>Designing the system architecture, database schema, and user interface.</li>
+                                <li>Leading the development and coding phases of the project.</li>
+                                <li>Overseeing the deployment, testing, and subsequent maintenance of the system.</li>
+                            </ul>
+							<p><a href="https://github.com/Ali-Mhrez/insurance-records" target="_blank" class="text-indigo-600">more details...</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>	
+
+        <section id="education" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Academic Background</h2>
+                 <p class="text-center max-w-2xl mx-auto text-gray-600 mb-12">
+                    My academic path has provided me with a strong theoretical foundation in computer science, culminating in a deep specialization in Data Science and Natural Language Processing at the PhD level.
+                </p>
+                <div class="max-w-3xl mx-auto">
+                    <div id="education-list" class="space-y-8"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold mb-4">Get In Touch</h2>
+            <p class="mb-6">Feel free to reach out for collaborations or just a friendly chat.</p>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:alisdmhrez@gmail.com" class="hover:text-indigo-400 transition-colors">alisdmhrez@gmail.com</a>
+                <a href="https://www.linkedin.com/in/ali-sd-mhrez" target="_blank" class="hover:text-indigo-400 transition-colors">LinkedIn</a>
+                <a href="https://github.com/Ali-Mhrez" target="_blank" class="hover:text-indigo-400 transition-colors">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden items-center justify-center p-4 modal-backdrop">
+        <div class="bg-white rounded-lg shadow-2xl w-full max-w-2xl p-8 relative modal-content scale-95">
+            <button id="close-modal-button" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 id="modal-title" class="text-2xl font-bold mb-4 text-gray-800"></h3>
+            <div id="modal-content" class="text-gray-600 space-y-4"></div>
+        </div>
+    </div>
+</body>
+</html>
