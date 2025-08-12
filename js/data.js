@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     role: 'PhD Researcher',
                     company: 'University of Debrecen',
                     period: 'Sep 2024 - Present',
-                    side: 'left',
+                    side: 'right',
                     details: 'Conducting research on state-of-the-art NLP techniques, with a focus on stance detection, document segmentation, summarization, natural language inference, and Large Language Models (LLMs).'
                 },
                 {
                     role: 'PhD Researcher',
                     company: 'Homs University',
                     period: 'Feb 2021 - Aug 2024',
-                    side: 'right',
+                    side: 'left',
                     details: 'Developed a novel hybrid architecture for stance detection, combining mBERT feature extraction with CNN and LSTM models to outperform traditional fine-tuning.<br><br>'
 						   + 'Conducted a comparative study of multilingual transformers (mBERT, XLM-RoBERTa, DistilBERT, mDeBERTa) to assess their effectiveness and knowledge transfer capabilities.<br><br>'
 						   + 'Benchmarked state-of-the-art Arabic models (AraBERT, MARBERT, ALBERT) to address specific linguistic challenges.<br><br>'
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     role: 'Teacher Assistant',
                     company: 'Homs University',
                     period: 'Apr 2017 - Jun 2024',
-                    side: 'left',
+                    side: 'right',
                     details: 'Mentored and lectured students on a range of computer science topics:<br>'
 						   +'Algorithms and Data Structures - Database Management Systems - Advanced Programming (Python) - Programming in Java - Web development.'
                 },
