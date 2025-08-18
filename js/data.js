@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     role: 'Teacher Assistant',
                     company: 'Homs University',
                     period: 'Apr 2017 - Jun 2024',
-                    side: 'right',
+                    side: 'left',
                     details: 'Mentored and lectured students on a range of computer science topics:<br>'
 						   +'Algorithms and Data Structures - Database Management Systems - Advanced Programming (Python) - Programming in Java - Web development.'
                 },
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     role: 'Freelance Java Instructor',
                     company: 'Remote',
                     period: 'Jan 2016 - June 2022',
-                    side: 'left',
+                    side: 'right',
                     details: 'Provided one-on-one and small group instruction in Java, from foundational basics to advanced OOP and data structures, for over 100 international students in the UAE and Saudi Arabia.<br>'
 						   +'Mentored students through challenging coding assignments and personal projects, successfully preparing them for academic and professional success in the technology field.'
                 }
