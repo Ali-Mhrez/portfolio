@@ -19,6 +19,18 @@ document.addEventListener('DOMContentLoaded', function () {
 						   + 'Implemented foundational deep learning models (MLP, CNN, LSTM) for stance detection, leveraging \textbf{AraVec} embeddings to establish a performance baseline.'
                 },
                 {
+                    role: 'Software Engineer',
+                    company: 'Central Bank of Syria',
+                    period: 'Jun 2018 - Mar 2023',
+                    side: 'right',
+                    details: 'Spearheaded the full-stack development of a new Insurance Record Management System, leveraging Laravel and PHP to build a robust back-end.<br><br>'
+						   + 'Engineered the front-end interface using Blade, HTML, CSS, Bootstrap, JavaScript, and jQuery to create an intuitive and responsive user experience.<br><br>'
+						   + 'Designed and implemented the database schema using MySQL, ensuring data integrity and efficient querying for over 10,000 records.<br><br>'
+					       + 'Developed and integrated RESTful APIs with Laravel, enabling seamless communication between the front-end and back-end, which supported real-time data updates.<br><br>'
+					       + 'Managed the continuous evolution and maintenance of the software over a multi-year period, ensuring system stability, scalability, and performance for a growing user base.<br><br>'
+					       + 'Developed and integrated new features based on business requirements, including a role-based access control and a real-time notification component, which improved user security and communication.<br><br>'
+                },
+                {
                     role: 'Teacher Assistant',
                     company: 'Homs University',
                     period: 'Apr 2017 - Jun 2024',
@@ -33,14 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     side: 'left',
                     details: 'Provided one-on-one and small group instruction in Java, from foundational basics to advanced OOP and data structures, for over 100 international students in the UAE and Saudi Arabia.<br>'
 						   +'Mentored students through challenging coding assignments and personal projects, successfully preparing them for academic and professional success in the technology field.'
-                },
-                {
-                    role: 'Software Engineer',
-                    company: 'Central Bank of Syria',
-                    period: 'Jun 2018 - Mar 2023',
-                    side: 'right',
-                    details: 'Led the full development lifecycle of an Insurance Record Management System, from requirement gathering and analysis to system design, development, and deployment.<br><br>'
-						   + 'Provided technical support and troubleshooting assistance to colleagues across departments.'
                 }
             ];
 
