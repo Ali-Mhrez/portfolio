@@ -102,7 +102,7 @@
             <!-- Constrained and centered container for the text header (for readability) -->
             <div class="container mx-auto px-6 max-w-7xl mb-12">
                 <h1 class="text-5xl font-extrabold text-gray-900 mb-4 text-center">Core Model Architectures</h1>
-                <p class="text-xl text-gray-600 text-center">Visual representations of the deep learning and NLP architectures I have implemented and analyzed.</p>
+                <p class="text-xl text-gray-600 text-center">Visual representations of the deep learning and NLP architectures I have studied.</p>
             </div>
             
             <!-- Full-width container for the masonry grid -->
@@ -148,9 +148,12 @@
         // --- Customization Block: Detailed Descriptions ---
         // Use the image's 'alt' text as the key to look up the specific details.
         const imageDetails = {
-            "Transformer Encoder Architecture": {
-                caption: "Update Detailed view of the Multi-Head Attention mechanism and feed-forward layers within the encoder block, illustrating its self-attention capabilities for contextualized embeddings.",
-                description: "Update The core Transformer Encoder block processes input sequence elements simultaneously, unlike sequential models. It consists of a Multi-Head Attention layer and a position-wise fully connected feed-forward network. Each sub-layer employs a residual connection followed by layer normalization. This structure is foundational for models like BERT."
+            "Coupled Hierarchical Transformer": {
+                caption: "2020.cht ",
+                description: "<li><b>Local Context Encoding (LCE):</b> Capture local interactions between subthreads (i.e., subset of posts inside the conversation).</li>"
+						   + "<li><b>Global Context Encoding (GCE):</b> Capture global interactions in the entire conversation and construct a representation of the full conversation thread.</li>"
+						   + "<li><b>Coupled Transformer Module:</b> Contain stance-specific Transformer and a cross-task Transformer to model inter task (i.e., stance detection and rumour verification) interactions.</li>"
+						   + "<li><b>Post-Level Attention:</b> Obtain a stance label-aware thread representation.</li>"
             }
         };
 
@@ -159,7 +162,7 @@
         // **CONTROL THE SIZE BY CHANGING THE 'width', 'height', AND 'cols' PROPERTIES**
         const galleryData = [
             // Tall/Vertical Images (Ratio 4:6), 1 column width
-            { url: "2020.cht.png", alt: "Transformer Encoder Architecture", width: 400, height: 400, cols: 1 },
+            { url: "2020.cht.png", alt: "Coupled Hierarchical Transformer", width: 400, height: 270, cols: 1 },
         ];
 
 
@@ -180,7 +183,7 @@
 
             // Set modal content
             modalTitle.textContent = item.alt;
-            modalDescription.textContent = details.description; // Using 'description' for the main text
+            modalDescription.innerHTML = details.description; // Using 'description' for the main text
             
             // Recreate image element to display in modal (and make it rounded)
             // Increased max-h to 75vh to give large images more space to fit
