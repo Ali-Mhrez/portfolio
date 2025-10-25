@@ -2,11 +2,20 @@ document.addEventListener('DOMContentLoaded', function () {
             
             const experienceData = [
                 {
+                    role: 'Instructor',
+                    company: 'University of Debrecen',
+                    period: 'Sep 2025 - Present',
+                    side: 'left',
+                    details: 'Lead theoretical lectures and practical lab sessions for the Software Development Methodologies course (INBPA0521L).<br><br>'
+						   + 'Independently design and deliver all theoretical lectures (Waterfall, Agile, Scrum, UML) for a cohort of 36 3rd-year Bachelor\'s students. <br><br>'
+						   + 'Manage all hands-on lab sessions and mentor students, providing direct feedback on projects and practical skills.'
+                },
+				{
                     role: 'PhD Researcher',
                     company: 'University of Debrecen',
                     period: 'Sep 2024 - Present',
                     side: 'right',
-                    details: 'Conducting research on state-of-the-art NLP techniques, with a focus on stance detection, document segmentation, summarization, natural language inference, and Large Language Models (LLMs).'
+                    details: 'Conducting research on state-of-the-art NLP techniques, with a focus on Large Language Models (LLMs), stance detection, document segmentation, and natural language inference.'
                 },
                 {
                     role: 'PhD Researcher',
