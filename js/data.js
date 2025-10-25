@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const educationData = [
                 {
-                    degree: 'PhD in Data Science (NLP focus)',
+                    degree: 'PhD in Computer Science (Data Science, NLP)',
                     institution: 'University of Debrecen, Hungary',
                     period: 'Sep 2024 - Present'
                 },
                 {
-                    degree: 'PhD in Computer Science (NLP focus)',
+                    degree: 'PhD in Computer Science (Data Science, NLP)',
                     institution: 'Homs University, Syria',
                     period: 'Feb 2021 - Aug 2024',
                     note: 'Dissertation: Stance Detection in Natural Language Texts Using Deep Learning Techniques'
