@@ -148,7 +148,15 @@
         // --- Customization Block: Detailed Descriptions ---
         // Use the image's 'alt' text as the key to look up the specific details.
         const imageDetails = {
-            "Coupled Hierarchical Transformer": {
+            "Hierarchical Transformer": {
+                caption: "2021.hat ",
+                description: "<li><b>Sentence Transformer:</b> Model the interaction between words in each sentence.</li>"
+						   + "<li><b>Document transformer:</b> Capture the global context of document, and further learn document context-aware sentence representations.</li>"
+						   + "<li><b>Sentence Transformer:</b> Apply another sentence Transformer to the hidden word representations and the document-aware sentence representation for each sentence. Capture document context aware word representation sequence for each sentence.</li>"
+						   + "<li><b>Hierarchical Pooling:</b> Obtain the document embedding.</li><br>"
+						   + "<b>Reference:</b><br> Chuhan Wu, Fangzhao Wu, Tao Qi, and Yongfeng Huang. 2021. Hi-Transformer: Hierarchical Interactive Transformer for Efficient and Effective Long Document Modeling. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers), pages 848–853, Online. Association for Computational Linguistics."
+            },
+			"Coupled Hierarchical Transformer": {
                 caption: "2020.cht ",
                 description: "<li><b>Local Context Encoding (LCE):</b> Capture local interactions between subthreads (i.e., subset of posts inside the conversation).</li>"
 						   + "<li><b>Global Context Encoding (GCE):</b> Capture global interactions in the entire conversation and construct a representation of the full conversation thread.</li>"
@@ -169,7 +177,8 @@
         // **CONTROL THE SIZE BY CHANGING THE 'width', 'height', AND 'cols' PROPERTIES**
         const galleryData = [
             // Tall/Vertical Images (Ratio 4:6), 1 column width
-            { url: "2020.cht.png", alt: "Coupled Hierarchical Transformer", width: 400, height: 270, cols: 1 },
+            { url: "2021.hat.png", alt: "Hierarchical Transformer", width: 400, height: 210, cols: 1 },
+			{ url: "2020.cht.png", alt: "Coupled Hierarchical Transformer", width: 400, height: 270, cols: 1 },
 			{ url: "2021.hmcan.png", alt: "Hierarchical Multi-modal Contextual Attention Network", width: 400, height: 145, cols: 1 },
         ];
 
