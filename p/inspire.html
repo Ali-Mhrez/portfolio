@@ -148,7 +148,15 @@
         // --- Customization Block: Detailed Descriptions ---
         // Use the image's 'alt' text as the key to look up the specific details.
         const imageDetails = {
-            "Hierarchical Transformer": {
+            "Multiset Dual Summarization": {
+                caption: "2023.mds ",
+                description: "<li><b>BiLSTM:</b> First obtain a hierarchical encoding of the news body, encodings for each sentence in the news body and headline.</li>"
+						   + "<li><b>Splitter:</b> Divides the sentences of the news body into four sets based on the similarity between the encoded representation of the headline and the encoded representation of the sentences in the news body, as well as the similarity between the hierarchical encoded representation of the news body and the encoded representation of the sentences in the news body.</li>"
+						   + "<li><b>Multi-head attention-based summary:</b> Apply muti-head attention to obtain a summary representative vector by capturing different aspects of sentences within each set.</li>"
+						   + "<li><b>Dense:</b> Concatenate the summary representative vector for all sets, and pass them through dense layers for classification.</li><br>"
+						   + "<b>Reference:</b><br> Sujit Kumar, Rohan Jaiswal, Mohit Ram Sharma, and Sanasam Ranbir Singh. 2023. Multiset Dual Summarization for Incongruent News Article Detection. In Proceedings of the 20th International Conference on Natural Language Processing (ICON), pages 779–790, Goa University, Goa, India. NLP Association of India (NLPAI)."
+            },
+			"Hierarchical Transformer": {
                 caption: "2021.hat ",
                 description: "<li><b>Sentence Transformer:</b> Model the interaction between words in each sentence.</li>"
 						   + "<li><b>Document transformer:</b> Capture the global context of document, and further learn document context-aware sentence representations.</li>"
@@ -183,8 +191,9 @@
         // **CONTROL THE SIZE BY CHANGING THE 'width', 'height', AND 'cols' PROPERTIES**
         const galleryData = [
             // Tall/Vertical Images (Ratio 4:6), 1 column width
-            { url: "2021.hat.png", alt: "Hierarchical Transformer", width: 400, height: 210, cols: 1 },
-			{ url: "2021.hmcan.png", alt: "Hierarchical Multi-modal Contextual Attention Network", width: 400, height: 210, cols: 1 },
+            { url: "2023.mds.png", alt: "Multiset Dual Summarization", width: 400, height: 250, cols: 1 },
+			{ url: "2021.hat.png", alt: "Hierarchical Transformer", width: 400, height: 250, cols: 1 },
+			{ url: "2021.hmcan.png", alt: "Hierarchical Multi-modal Contextual Attention Network", width: 400, height: 250, cols: 1 },
 			{ url: "2020.cht.png", alt: "Coupled Hierarchical Transformer", width: 400, height: 270, cols: 1 },
 			{ url: "2017.transformer.png", alt: "The Transformer", width: 400, height: 350, cols: 1 },
         ];
