@@ -148,7 +148,14 @@
         // --- Customization Block: Detailed Descriptions ---
         // Use the image's 'alt' text as the key to look up the specific details.
         const imageDetails = {
-            "Multiset Dual Summarization": {
+            "Hierarchical Document Transformer": {
+                caption: "2024.hdt ",
+                description: "<li><b>Anchor Tokens:</b> Auxiliary anchor tokens to represent each element (i.e., section, sentence etc.) in the hierarchy.</li>"
+						   + "<li><b>Hierarchical Positional Encoding:</b> To inform each token about its position within the hierarchy, extend the sinusoidal position encoding to model L hierarchy levels (i.e., assign it one linear index per hierarchy level).</li>"
+						   + "<li><b>Hierarchical Attention:</b> To model document structure, modify the attention pattern in such a way that information is only exchanged directly between tokens at the same level as well as between the respective parent and child tokens.</li>"
+						   + "<b>Reference:</b><br> He, H., Flicke, M., Buchmann, J., Gurevych, I. and Geiger, A., 2024. HDT: Hierarchical document transformer. arXiv preprint arXiv:2407.08330."
+            },
+			"Multiset Dual Summarization": {
                 caption: "2023.mds ",
                 description: "<li><b>BiLSTM:</b> First obtain a hierarchical encoding of the news body, encodings for each sentence in the news body and headline.</li>"
 						   + "<li><b>Splitter:</b> Divides the sentences of the news body into four sets based on the similarity between the encoded representation of the headline and the encoded representation of the sentences in the news body, as well as the similarity between the hierarchical encoded representation of the news body and the encoded representation of the sentences in the news body.</li>"
@@ -191,9 +198,10 @@
         // **CONTROL THE SIZE BY CHANGING THE 'width', 'height', AND 'cols' PROPERTIES**
         const galleryData = [
             // Tall/Vertical Images (Ratio 4:6), 1 column width
-            { url: "2023.mds.png", alt: "Multiset Dual Summarization", width: 400, height: 250, cols: 1 },
-			{ url: "2021.hat.png", alt: "Hierarchical Transformer", width: 400, height: 250, cols: 1 },
-			{ url: "2021.hmcan.png", alt: "Hierarchical Multi-modal Contextual Attention Network", width: 400, height: 250, cols: 1 },
+            { url: "2024.hdt.png", alt: "Hierarchical Document Transformer", width: 400, height: 120, cols: 1 },
+			{ url: "2023.mds.png", alt: "Multiset Dual Summarization", width: 400, height: 250, cols: 1 },
+			{ url: "2021.hat.png", alt: "Hierarchical Transformer", width: 400, height: 210, cols: 1 },
+			{ url: "2021.hmcan.png", alt: "Hierarchical Multi-modal Contextual Attention Network", width: 400, height: 150, cols: 1 },
 			{ url: "2020.cht.png", alt: "Coupled Hierarchical Transformer", width: 400, height: 270, cols: 1 },
 			{ url: "2017.transformer.png", alt: "The Transformer", width: 400, height: 350, cols: 1 },
         ];
