@@ -163,6 +163,15 @@
 						   + "<li><b>Dense:</b> Concatenate the summary representative vector for all sets, and pass them through dense layers for classification.</li><br>"
 						   + "<b>Reference:</b><br> Sujit Kumar, Rohan Jaiswal, Mohit Ram Sharma, and Sanasam Ranbir Singh. 2023. Multiset Dual Summarization for Incongruent News Article Detection. In Proceedings of the 20th International Conference on Natural Language Processing (ICON), pages 779–790, Goa University, Goa, India. NLP Association of India (NLPAI)."
             },
+			"Hierarchical Structure": {
+                caption: "2022.histruct ",
+                description: "<li><b>Base TLM:</b> Pretrained language models to learn contextual sentence representations.</li>"
+						   + "<li><b>Sentence Linear Position:</b> Enrich sentence representation with sentence linear position embedding, which encodes sentence positions within the whole document.</li>"
+						   + "<li><b>Sentence Hierarchical Position:</b> Instead of just knowing a sentence is the 25th sentence in the whole document, this embedding tells the model where it is in the hierarchy. It's encoded as a 2-dimensional vector (a, b), where a is the linear position of the section it's in, and b is the linear position of the sentence within that section.</li>"
+						   + "<li><b>Section Title Embedding:</b> This is a vector representation of the literal text of the section title (e.g., Introduction, Results, Discussion) that the sentence belongs to.</li>"
+						   +"<li><b>Stacked TLMs:</b> The previous two embeddings are added to the sentence's representation after it has been processed by a base model (like BERT or Longformer). This enriched representation is then fed into two final Transformer layers that make the summarization decision</li><br>"
+						   + "<b>Reference:</b><br> Ruan, Q., Ostendorff, M. and Rehm, G., 2022. HiStruct+: Improving extractive text summarization with hierarchical structure information. arXiv preprint arXiv:2203.09629."
+            },
 			"Hierarchical Transformer": {
                 caption: "2021.hat ",
                 description: "<li><b>Sentence Transformer:</b> Model the interaction between words in each sentence.</li>"
@@ -206,6 +215,7 @@
             // Tall/Vertical Images (Ratio 4:6), 1 column width
             { url: "2024.hdt.png", alt: "Hierarchical Document Transformer", width: 400, height: 120, cols: 1 },
 			{ url: "2023.mds.png", alt: "Multiset Dual Summarization", width: 400, height: 250, cols: 1 },
+			{ url: "2022.histruct.png", alt: "Hierarchical Structure", width: 400, height: 150, cols: 1 },
 			{ url: "2021.hat.png", alt: "Hierarchical Transformer", width: 400, height: 210, cols: 1 },
 			{ url: "2021.hmcan.png", alt: "Hierarchical Multi-modal Contextual Attention Network", width: 400, height: 150, cols: 1 },
 			{ url: "2020.cht.png", alt: "Coupled Hierarchical Transformer", width: 400, height: 270, cols: 1 },
