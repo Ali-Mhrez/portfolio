@@ -200,6 +200,12 @@
 						   + "<li><b>Doc Encoder:</b> Learn Sentence Representations given their surrounding sentences as context.</li><br>"
 						   + "<b>Reference:</b><br> Xingxing Zhang, Furu Wei, and Ming Zhou. 2019. HIBERT: Document Level Pre-training of Hierarchical Bidirectional Transformers for Document Summarization. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, pages 5059–5069, Florence, Italy. Association for Computational Linguistics."
             },
+			"BERT Summarizer": {
+                caption: "2017.bertsum ",
+                description: "<li><b>Sentence-Level Representations:</b> In standard BERT, a [CLS] token is added only at the beginning of the entire input. In BERTSUM, a [CLS] token is inserted at the beginning of each sentence in the document. The output vector corresponding to each [CLS] token is then used as the representation for the sentence that follows it.</li>"
+						   + "<li><b>Interval Segment Embeddings:</b> Standard BERT uses segment embeddings (E_A, E_B) to distinguish between two sentences. To handle multi-sentential inputs in a document, BERTSUM assigns alternating segment embeddings (E_A or E_B) to each sentence. For example, sent_1 gets E_A, sent_2 gets E_B, sent_3 gets E_A, and so on. This helps distinguish multiple sentences hierarchically.</li><br>"
+						   + "<b>Reference:</b><br> Liu, Y. and Lapata, M., 2019. Text summarization with pretrained encoders. arXiv preprint arXiv:1908.08345."
+            },
 			"The Transformer": {
                 caption: "2017.transformer ",
                 description: "<li><b>Encoder:</b> Process the input sequence and create a rich, contextual representation of it by capturing relationships between tokens.</li>"
@@ -220,6 +226,7 @@
 			{ url: "2021.hmcan.png", alt: "Hierarchical Multi-modal Contextual Attention Network", width: 400, height: 150, cols: 1 },
 			{ url: "2020.cht.png", alt: "Coupled Hierarchical Transformer", width: 400, height: 270, cols: 1 },
 			{ url: "2019.hibert.png", alt: "Hierarchical BERT", width: 400, height: 220, cols: 1 },
+			{ url: "2019.bertsum.png", alt: "BERT Summarizer", width: 400, height: 90, cols: 1 },
 			{ url: "2017.transformer.png", alt: "The Transformer", width: 400, height: 350, cols: 1 },
         ];
 
